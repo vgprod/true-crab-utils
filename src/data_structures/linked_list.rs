@@ -22,32 +22,12 @@ impl<T> Default for LinkedList<T> {
 }
 
 impl<T> LinkedList<T> {
-    /// Create new empty linked list
-    ///
-    /// **When to use**: When you need dynamic size and frequent insertions/deletions
-    ///
-    /// # Example
-    /// ```
-    /// use ::data_structures::linked_list::LinkedList;
-    ///
-    /// let mut list = LinkedList::new();
-    /// list.push_front(10);
-    /// ```
     #[must_use]
     pub fn new() -> Self {
         LinkedList { head: None }
     }
 
-    /// Insert at the front (O(1))
-    ///
-    /// **When to use**: Fast insertion when order doesn't matter
-    ///
-    /// # Example
-    /// ```
-    /// let mut list = LinkedList::new();
-    /// list.push_front(2);
-    /// list.push_front(4);
-    /// ```
+    /// Insert at front (O(1))
     pub fn push_front(&mut self, value: T) {
         let new_node = Rc::new(RefCell::new(Node {
             value,
