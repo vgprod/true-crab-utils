@@ -12,3 +12,4 @@ name = "true_crab_utils"
 path = "src/lib.rs"
 
 [dependencies]
+criterion = "0.5.1"
