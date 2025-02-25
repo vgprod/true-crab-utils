@@ -50,9 +50,9 @@ mod tests {
 
     #[test]
     fn test_reverse() {
-        let mut arr = vec![2, 4, 10];
+        let mut arr = vec!["a", "b", "c"];
         reverse(&mut arr);
-        assert_eq!(arr, vec![10, 4, 2]);
+        assert_eq!(arr, vec!["c", "b", "a"]);
     }
 
     #[test]
