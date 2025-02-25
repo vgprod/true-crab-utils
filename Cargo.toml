@@ -2,5 +2,9 @@
 name = "true-crab-utils"
 version = "0.1.0"
 edition = "2021"
+authors = ["Vladan Gojgic <v.gojgic@gmail.com>"]
+description = "A collection of algorithms and data structures implemented in Rust."
+license = "MIT"
+repository = "https://github.com/vgprod/true-crab-utils"
 
 [dependencies]
